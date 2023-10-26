@@ -3,7 +3,7 @@ name: mark
 on:
   workflow_dispatch:
 
-  jobs:
+jobs:
   my-job:
     # Importing a reusable workflow from another repository and branch
     uses: markharrisonorg/actions-learning-pathway/.github/workflows/build-test-deploy.yml@main
