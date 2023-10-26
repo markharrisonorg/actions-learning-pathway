@@ -3,10 +3,16 @@ name: markup
 on:
   workflow_dispatch:
 
-jobs: 
+jobs:
+  example_matrix:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        version: [10, 12, 14]
+        os: [ubuntu-latest, windows-latest]
+        
   x1:
     runs-on: ubuntu-latest
-
     steps:
       - name: Adding markdown
         run: echo '### Hello world! 🚀' >> $GITHUB_STEP_SUMMARY  
