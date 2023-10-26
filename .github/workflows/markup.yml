@@ -1,0 +1,16 @@
+name: markup
+
+on:
+  workflow_dispatch:
+
+jobs: 
+  x1:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Adding markdown
+        run: echo '### Hello world! 🚀' >> $GITHUB_STEP_SUMMARY  
+
+      - name: Adding markdown2
+        run: echo '### Hello mark! 🥰' >> $GITHUB_STEP_SUMMARY  
+        
