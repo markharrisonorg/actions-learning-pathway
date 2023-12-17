@@ -5,11 +5,11 @@ on:
 
 jobs:
   example_matrix:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        version: [10, 12, 14]
-        os: [ubuntu-latest, windows-latest]
+    runs-on: self-hosted
+#    strategy:
+#      matrix:
+#        version: [10, 12, 14]
+#        os: [ubuntu-latest, windows-latest]
         
     steps:
       - name: Adding markdown
